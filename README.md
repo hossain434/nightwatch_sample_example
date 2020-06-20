@@ -12,7 +12,7 @@
 }
 
 5.	Please note that if we run npm test  now it will spit out an error since Nightwatch requires nightwatch.json or nightwatch.conf.json.
-6.	Here we have test folder directory ( i.e tests, the name can be anything ), webdriver properties ( like path, port etc.), and desired capabilities with a default value.
+6.	In nightwatch.json, we have test folder directory ( i.e tests, the name can be anything ), webdriver properties ( like path, port etc.), and desired capabilities with a default value.
 {
   "src_folders": ["tests"],
   "webdriver": {
