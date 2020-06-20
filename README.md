@@ -13,23 +13,22 @@
 
 5.	Please note that if we run npm test  now it will spit out an error since Nightwatch requires nightwatch.json or nightwatch.conf.json.
 6.	Here we have test folder directory ( i.e tests, the name can be anything ), webdriver properties ( like path, port etc.), and desired capabilities with a default value.
-7.	{
-  "src_folders" : ["tests"],
- 
-  "webdriver" : {
+{
+  "src_folders": ["tests"],
+  "webdriver": {
     "start_process": true,
-    "server_path": "node_modules/.bin/chromedriver",
-    "port": 9515
+    "server_path": "./node_modules/chromedriver/lib/chromedriver/chromedriver.exe",
+    "port": 9515,
+    "cli_args": ["--port=9515"]
   },
- 
-  "test_settings" : {
-    "default" : {
+  "test_settings": {
+    "default": {
       "desiredCapabilities": {
         "browserName": "chrome"
       }
     }
   }
 }
-8.	Let’s create tests folder inside the project since Nightwatch will look for that folder. And we need to add a basic test inside this folder. I will name it basicTests.js If everything went smooth running npm test will open a chrome browser and close it down since our test does not do anything yet.
-9.	Reference: https://www.swtestacademy.com/introduction-to-nighwatch-js/
+7.	Let’s create tests folder inside the project since Nightwatch will look for that folder. And we need to add a basic test inside this folder. I will name it basicTests.js If everything went smooth running npm test will open a chrome browser and close it down since our test does not do anything yet.
+8.	Reference: https://www.swtestacademy.com/introduction-to-nighwatch-js/
 
