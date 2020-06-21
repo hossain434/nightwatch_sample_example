@@ -8,7 +8,7 @@ pipeline {
         
     stage('Cloning Git') {
       steps {
-        git 'https://github.com/hossain434/InvoicePdfkitNodeJs'
+        git 'https://github.com/hossain434/nightwatch_sample_example'
       }
     }
         
@@ -20,7 +20,7 @@ pipeline {
      
     stage('Test') {
       steps {
-         sh 'node index.js'
+         sh 'npm test'
       }
     }      
   }
