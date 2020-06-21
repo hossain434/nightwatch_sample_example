@@ -1,5 +1,5 @@
 # Steps to create Nightwatch project:
-#### Please note - in the nightwatch.json file on Windows machine, update webdriver path to: "server_path": "./node_modules/chromedriver/lib/chromedriver/chromedriver.exe"
+#### Please note - in the nightwatch.json file on Windows machine, update webdriver path to: "server_path": "./node_modules/chromedriver/lib/chromedriver/chromedriver.exe".It may work without .exe extension also.
 
 1.	Create workspace folder mkdir nightwatchproject, cd nightwatchproject
 2.	Create package.json: npm init -y
